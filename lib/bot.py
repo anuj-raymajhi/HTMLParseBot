@@ -23,7 +23,7 @@ def load_worker_chain(modelName='meta/llama-3.1-405b-instruct'):
             ```
     """
 
-
+    load_dotenv(find_dotenv())
 
     llm = ChatNVIDIA(
         model_name=modelName,
